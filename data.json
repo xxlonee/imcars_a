@@ -1,0 +1,32 @@
+[
+    {
+        "image": "images/mehan.webp",
+        "procedure": "Механический ремонт",
+        "descr": "Поможем отремонтировать ваш автомобиль или подобрать запчасти."
+    },
+    {
+        "image": "images/kuzov.webp",
+        "procedure": "Кузовной ремонт",
+        "descr": "Избавим ваш автомобиль от царапин и вмятин."
+    },
+    {
+        "image": "images/detailing.jpg",
+        "procedure": "Детейлинг",
+        "descr": "Оклеим ваш автомобиль пленкой и сделаем химчистку салона."
+    },
+    {
+        "image": "images/vykup.webp",
+        "procedure": "Выкуп авто",
+        "descr": "Оценим и выкупим автомобиль по достойной цене.'"
+    },
+    {
+        "image": "images/strahovanie.webp",
+        "procedure": "Страхование",
+        "descr": "Застрахуем автомобиль от несчастных случаев."
+    },
+    {
+        "image": "images/shinomontazh.webp",
+        "procedure": "Шиномонтаж",
+        "descr": "Поменяем ваши колеса и покрышки."
+    }
+]

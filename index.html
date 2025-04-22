@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMCARS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="content">
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo__image" src="images/лого.png" alt="Логотип" width="150" height="150">
+            <h1 class="header__title">IMCARS</h1>
+        </a>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#Models">Модели</a></li>
+                <li class="menu__item"><a class="menu__link" href="#About">О компании</a></li>
+                <li class="menu__item"><a class="menu__link" href="#Контакты">Контактные данные</a></li>
+                <li class="menu__item menu__item--input"><input class="menu__input" type="search"></li>
+                <li class="menu__item"><button class="menu__link button-login " href="#">Вход</button></li>
+                <li class="menu__item"><button class="menu__link button-registration" href="#">Регистрация</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <section class="record" id="car__record" hidden>
+            <form class="record__form" action="/">
+                <button class="record__form__close">Закрыть</button>
+                <h1 class="record__title">Забронировать</h1>
+                <input class="record__input" type="text" name="surname" placeholder="ФИО" required>
+                <input class="record__input" type="number" name="phone" placeholder="Номер телефона" required>
+                <input class="record__input" type="email" name="post" placeholder="Почта" required>
+                <button class="record__button">Забронировать</button>
+            </form>
+        </section>
+        <section class="procedures" id="procedures">
+            <h2 class="procedures__title">Дополнительные услуги</h2>
+            <ul class="procedures__list">
+               
+            </ul>
+        </section>
+        <section class="services">
+            <h2 class="services__title" id="Popular">Популярные услуги</h2>
+            <div class="services__wrap">
+                <img class="services__image" src="images/dopolnit.jpg" alt="Услуги" width="270" height="350">
+            </div>
+            <ul id="services__group" class="services__group">
+            </ul>
+            <a class="services__link" href="services.html">Ознакомиться с услугами</a>
+        </section>
+
+        <section class="model">
+            <h2 class="model__title" id="Models">Модельный ряд</h2>
+            <ul class="model__list">
+            <li class="model__list-item">
+                <img class="model__img" src="images/vesta.webp" alt="Lada Vesta" width="150">
+                <p class="model__car">Lada Vesta, 2024</p>
+                <span class="model__price"> 2 000 000 руб.</span>
+                <button class="model__link" href="#"> Подробнее</button>
+            </li>
+            <li class="model__list-item">
+                <img class="model__img" src="images/granta.webp" alt="Lada Granta" width="150">
+                <p class="model__car">Lada Granta Sport, 2024</p>
+                <span class="model__price"> 1 500 000 руб.</span>
+                <button class="model__link" href="#"> Подробнее</button>
+            </li>
+            <li class="model__list-item">
+              <img class="model__img" src="images/geely coolray.jpg" alt="Geely Coolray" width="150">
+              <p class="model__car">Geely Coolray, 2023</p>
+              <span class="model__price"> 2 250 000 руб.</span>
+              <button class="model__link" href="#"> Подробнее</button>
+          </li>
+          <li class="model__list-item">
+            <img class="model__img" src="images/haval jolion.webp" alt="Haval Jolion" width="150">
+            <p class="model__car">Haval Jolion, 2022</p>
+            <span class="model__price"> 2 050 000 руб.</span>
+            <button class="model__link" href="#"> Подробнее</button>
+          </li>
+          <li class="model__list-item">
+            <img class="model__img" src="images/chery arrizo 8.webp" alt="chery arrizo 8" width="150">
+            <p class="model__car">Chery Arrizo 8, 2024</p>
+            <span class="model__price"> 3 100 000 руб.</span>
+            <button class="model__link" href="#"> Подробнее</button>
+          </li>
+          <li class="model__list-item">
+            <img class="model__img" src="images/tank 3.webp" alt="Tank 300" width="150">
+            <p class="model__car">Tank 300, 2024</p>
+            <span class="model__price"> 4 250 000 руб.</span>
+            <button class="model__link" href="#"> Подробнее</button>
+          </li>
+        </ul>
+        </section>
+
+        <section class="popular__models">
+            <h2 class="popular__models__title">Наиболее популярные предложения</h2>
+            <div class="slider swiper">
+                <!-- <button class="slider__left">←</button> -->
+                <!-- <div class="slider__center"> -->
+                    <ul class="popular__list swiper-wrapper" id="#popular__list">
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/e-class.webp" alt="mercedes" width="150"
+                                height="170">
+                            <h3 class="car__name">Mercedes E-class</h3>
+                            <p class="popular__year"> 2022</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                        </li>
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/bmw5.webp" alt="bmw" width="150"
+                                height="170">
+                            <h3 class="car__name">BMW 5-series</h3>
+                            <p class="popular__year">2020</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                 
+                        </li>
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/audia6.webp" alt="audi" width="150"
+                                height="170">
+                            <h3 class="car__name">Audi A6</h3>
+                            <p class="popular__year">2019</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                        </li>
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/optima.webp" alt="kia" width="150"
+                                height="170">
+                            <h3 class="car__name">Kia Optima</h3>
+                            <p class="popular__year">2018</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                        </li>
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/monjaro.webp" alt="geely" width="150"
+                                height="170">
+                            <h3 class="car__name">Geely Monjaro</h3>
+                            <p class="popular__year">2023</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                        </li>
+                        <li class="popular__card swiper-slide">
+                            <img class="popular__image" src="images/x5.webp" alt="bmw" width="150"
+                                height="170">
+                            <h3 class="car__name">BMW X5</h3>
+                            <p class="popular__year">2024</p>
+                                <button class="popular__link button-form" href="#">Забронировать</button>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- <button class="slider__right">→</button> -->
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__wrap-left">
+                <h2 class="about__title" id="About">О нас</h2>
+                <p>IMCARS — это современный автомобильный маркетплейс, который предлагает своим клиентам широкий выбор новых и подержанных автомобилей. 
+                    Мы стремимся создать удобные условия для покупки и продажи автомобилей, обеспечивая высокое качество обслуживания и прозрачность всех сделок.
+                    Покупка автомобиля — это важный шаг, и наша цель — сделать этот процесс максимально комфортным и безопасным. 
+                    Каждое транспортное средство в нашем каталоге проходит тщательную проверку на юридическую чистоту и техническое состояние, что гарантирует нашим клиентам уверенность в своем выборе.</p>
+                <a class="about__link" href="#Models">Перейти к выбору</a>
+            </div>
+            <div class="about__wrap-right">
+                <img class="about__image" src="images/autosalon.jpg" alt="salon" width="750" height="175">
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer container">
+        <div class="footer__part">
+            <h2 class="footer__title"><a>Разработчики</a></h2>
+            <ul class="footer__group">
+                <li class="footer__item"><a class="footer__item-link" href="#">Кокушкин Даниил</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Атлашкин Илья</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Коршунова Татьяна</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">© Все права защищены</a></li>
+            </ul>
+        </div>
+        <div class="footer__part">
+            <h2 class="footer__title"><a>Покупателям</a></h2>
+            <ul class="footer__group">
+                <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Рассчитать стоимость кредита</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Trade-in</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Страхование</a></li>
+            </ul>
+        </div>
+        <div class="footer__part">
+            <h2 class="footer__title" id="Contacts"><a>Продавцам</a></h2>
+            <div class="footer__group">
+                <li class="footer__item"><a class="footer__item-link" href="#">Продать свой авто</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Поделиться впечатлениями</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Записаться на сервис</a></li>
+            </div>
+        </div>
+        <div class="footer__part">
+            <h2 class="footer__title"><a>О нас</a></h2>
+            <ul class="footer__group">
+                <li class="footer__item"><a class="footer__item-link" href="#">Адреса</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="record form-login" hidden>
+        <form id="form-login" class="record__form" action="/">
+            <button class="form-login__close">закрыть</button>
+            <h1 class="record__title">Вход</h1>
+            <input class="record__input" id="number" type="number" name="phone" placeholder="Номер телефона" required>
+            <input class="record__input" id="password" type="password" name="parol" placeholder="Пароль" required>
+            <button class="record__button">Войти</button>
+            <a class="record__link" href="#">Забыли пароль</a>
+            <p id="error-message-login" class="error-message"></p>
+        </form>
+    </section>
+  
+    <section class="record form-registration" hidden>
+        
+        <form class="record__form" action="/">
+            <button class="form-registration__close">закрыть</button>
+            <h1 class="record__title">Регистрация</h1>
+            <input class="record__input" id="familiya" type="text" name="familiya" placeholder="Фамилия" required>
+            <input class="record__input" id="name" type="text" name="name" placeholder="Имя" required>
+            <input class="record__input" type="date" name="year" placeholder="Год рождения" required>
+            <input class="record__input" type="number" name="telephone" placeholder="Номер телефона" required>
+            <input class="record__input" id="password" type="text" name="think" placeholder="Придумайте пароль" required>
+            <button class="record__button">Зарегистрироваться</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
